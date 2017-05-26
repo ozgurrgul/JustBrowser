@@ -1,5 +1,8 @@
 # JustBrowser
-Just Browser source code 
+Just Browser for Android
+
+![logo](https://lh3.googleusercontent.com/qZXyMY-tc-MbdYXEZRs65NhaB2-_EIKSJSX4LpNsFfS8t67P0Za0n6b2D20WSyRUZuI=w300-rw "Just Browser Logo")
+
 
 Google Play link: https://play.google.com/store/apps/details?id=just.browser
 
