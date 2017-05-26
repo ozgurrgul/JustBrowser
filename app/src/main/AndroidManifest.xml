@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.browser">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_aon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:name="com.browser.App">
+
+        <activity
+            android:name=".browser.MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|keyboard|locale"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.APP_BROWSER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="file" />
+                <data android:mimeType="text/html" />
+                <data android:mimeType="text/plain" />
+                <data android:mimeType="application/xhtml+xml" />
+                <data android:mimeType="application/vnd.wap.xhtml+xml" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:scheme="about" />
+                <data android:scheme="javascript" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:scheme="inline" />
+                <data android:mimeType="text/html" />
+                <data android:mimeType="text/plain" />
+                <data android:mimeType="application/xhtml+xml" />
+                <data android:mimeType="application/vnd.wap.xhtml+xml" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:scheme="file" />
+                <data android:mimeType="application/x-webarchive-xml" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.WEB_SEARCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+            </intent-filter>
+        </activity>
+
+        <activity android:theme="@style/Theme.Swipe" android:name="com.browser.history.HistoryActivity" android:configChanges="orientation|screenSize|keyboardHidden|keyboard|locale" />
+        <activity android:theme="@style/Theme.Swipe" android:name="com.browser.odm.ui.DownloadsActivity" android:configChanges="orientation|screenSize|keyboardHidden|keyboard|locale"/>
+        <activity android:theme="@style/Theme.Swipe" android:name="com.browser.bookmark.BookmarksActivity" android:configChanges="orientation|screenSize|keyboardHidden|keyboard|locale" />
+        <activity android:theme="@style/Theme.Swipe" android:name="com.browser.adblock.AdBlockActivity" android:configChanges="orientation|screenSize|keyboardHidden|keyboard|locale"/>
+        <activity android:theme="@style/Theme.Swipe" android:name="com.browser.settings.SettingsActivity" android:configChanges="orientation|screenSize|keyboardHidden|keyboard|locale"/>
+        <activity android:theme="@style/Theme.Swipe" android:name="com.browser.settings.ClearDataActivity" android:configChanges="orientation|screenSize|keyboardHidden|keyboard|locale"/>
+        <activity android:theme="@style/Theme.Swipe" android:name="com.browser.support.SupportActivity" android:configChanges="orientation|screenSize|keyboardHidden|keyboard|locale"/>
+        <activity android:theme="@style/Theme.Swipe" android:name="com.browser.my.MyStatsActivity" android:configChanges="orientation|screenSize|keyboardHidden|keyboard|locale"/>
+        <activity android:theme="@style/Theme.Swipe" android:name="com.browser.theme.ThemesActivity" android:configChanges="orientation|screenSize|keyboardHidden|keyboard|locale"/>
+
+        <service
+            android:name="com.browser.odm.clipboard.ListenClipboardService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":process" />
+
+        <receiver
+            android:name="com.browser.odm.clipboard.BootCompletedReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data android:name="android.webkit.WebView.MetricsOptOut" android:value="true" />
+
+    </application>
+</manifest>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.browser.ui.widget.jlist.JLBG xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:padding="5dp"
+    >
+
+    <com.browser.ui.widget.jlist.JLTV
+        android:id="@+id/TitleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:layout_marginLeft="5dp"
+        />
+
+    <com.browser.ui.widget.jlist.JLTV2
+        android:id="@+id/UrlTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="5dp"
+        />
+
+</com.browser.ui.widget.jlist.JLBG>

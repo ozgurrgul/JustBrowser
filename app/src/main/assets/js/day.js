@@ -1,0 +1,1 @@
+(function(){var css = document.getElementById('night_mode_browser');if (css) {css.parentNode.removeChild(css);}})();

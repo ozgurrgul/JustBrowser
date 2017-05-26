@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/TabsListBottomBackground"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        >
+
+        <!-- new incognito tabView button -->
+        <ImageView
+            android:id="@+id/NewIncognitoTabButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="9dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/ic_incog"
+            android:layout_centerVertical="true"
+            />
+
+        <!-- new tabView button -->
+        <ImageView
+            android:id="@+id/NewTabButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_plus"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@id/TabsListBottomBackground"
+        >
+
+        <!-- touch interceptor to capture touch outside list -->
+        <com.browser.ui.widget.JInterceptor
+            android:id="@+id/TabsListTouchInterceptor"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#3ecccccc"
+            android:alpha="0.8"
+            android:minHeight="200dp"
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/RecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

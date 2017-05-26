@@ -1,0 +1,91 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- settings -->
+    <com.browser.settings.JPrefCategory android:title="@string/settings"/>
+
+    <com.browser.settings.JSwitchPref
+        android:title="@string/s_block_images"
+        android:defaultValue="false"
+        android:key="PREF_BLOCK_IMAGE"
+        />
+
+    <com.browser.settings.JSwitchPref
+        android:title="@string/s_block_js"
+        android:defaultValue="false"
+        android:key="PREF_BLOCK_JS"
+        />
+
+    <com.browser.settings.JSwitchPref
+        android:title="@string/s_enable_cookies"
+        android:defaultValue="true"
+        android:key="PREF_ENABLE_COOKIES"
+        />
+
+    <com.browser.settings.JSwitchPref
+        android:title="@string/s_block_ads"
+        android:defaultValue="true"
+        android:key="PREF_BLOCK_AD"
+        />
+
+
+    <com.browser.settings.JPref android:title="@string/s_clear_data">
+        <intent
+            android:targetPackage="just.browser"
+            android:targetClass="com.browser.settings.ClearDataActivity"/>
+    </com.browser.settings.JPref>
+
+    <com.browser.settings.JSwitchPref
+        android:title="@string/s_desktop_mode"
+        android:defaultValue="false"
+        android:key="PREF_DESKTOP_MODE"
+        />
+
+    <com.browser.settings.JSwitchPref
+        android:title="@string/s_show_logo_in_home"
+        android:defaultValue="true"
+        android:key="PREF_SHOW_LOGO"
+        />
+
+    <com.browser.settings.JSwitchPref
+        android:title="@string/s_start_copy_text_listener"
+        android:defaultValue="true"
+        android:key="PREF_START_COPY_TEXT_LISTENER"
+        />
+
+    <!-- settings -->
+    <com.browser.settings.JPrefCategory android:title="@string/other_settings"/>
+
+    <com.browser.settings.JListPreference
+        android:title="@string/s_text_size"
+        android:defaultValue="100"
+        android:key="PREF_TEXT_SIZE"
+        android:entries="@array/settings_text_size_entries"
+        android:entryValues="@array/settings_text_size_entries_values"
+        />
+
+    <com.browser.settings.JListPreference
+        android:title="@string/s_search_engine"
+        android:defaultValue="https://www.google.com/search?q="
+        android:key="PREF_SEARCH_ENGINE"
+        android:entries="@array/search_engine_list_entries"
+        android:entryValues="@array/search_engine_list_entries_values"
+        />
+
+    <com.browser.settings.JSwitchPref
+        android:title="@string/s_mouse_pad"
+        android:defaultValue="false"
+        android:key="PREF_MOUSE_PAD"
+        />
+
+    <!-- app -->
+    <com.browser.settings.JPrefCategory android:title="@string/app_name"/>
+
+    <com.browser.settings.JPref android:title="@string/s_rate">
+        <intent android:action="android.intent.action.VIEW" android:data="market://details?id=just.browser" />
+    </com.browser.settings.JPref>
+
+    <com.browser.settings.JPref android:title="@string/s_support">
+        <intent android:targetPackage="just.browser" android:targetClass="com.browser.support.SupportActivity"/>
+    </com.browser.settings.JPref>
+
+</PreferenceScreen>

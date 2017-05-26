@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/RootLayout"
+    >
+
+    <com.browser.ui.widget.JTB
+        android:id="@+id/TopBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.browser.ui.widget.JBB
+        android:id="@+id/BottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TopBar"
+        android:layout_above="@id/BottomBar"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="20dp"
+            >
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic1"
+                />
+
+            <!-- TITLE 1 -->
+            <com.browser.ui.widget.jlist.JLTV
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sup_title1"
+                android:textSize="18sp"
+                android:layout_marginTop="4dp"
+                />
+
+            <com.browser.ui.widget.jlist.JLTV2
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sup_title1_sub"
+                android:textSize="16sp"
+                android:layout_marginTop="5dp"
+                />
+
+            <com.browser.ui.widget.jlist.JLTV2
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="✓ Easy to use user interface, you only need one finger"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"
+                />
+
+            <com.browser.ui.widget.jlist.JLTV2
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="✓Ad blocking for you, for your data plan"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"
+                />
+
+            <com.browser.ui.widget.jlist.JLTV2
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="✓ Night mode for your eyes"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"
+                />
+
+            <com.browser.ui.widget.jlist.JLTV2
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="✓ Integrated advanced download manager for your files"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"
+                />
+
+            <com.browser.ui.widget.jlist.JLTV2
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="✓ Bookmark and speed dial to favorite your sites"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"
+                />
+
+            <com.browser.ui.widget.jlist.JLTV2
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="✓ Incognito browsing for fun"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"
+                />
+
+            <!-- TITLE 2 -->
+            <com.browser.ui.widget.jlist.JLTV
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sup_title2"
+                android:textSize="18sp"
+                android:layout_marginTop="7dp"
+                />
+
+            <com.browser.ui.widget.jlist.JLTV2
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sup_title2_sub"
+                android:textSize="16sp"
+                android:layout_marginTop="5dp"
+                />
+
+            <com.browser.ui.widget.jlist.JLTV2
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="✓ Don\'t interest what you browse"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"
+                />
+
+            <com.browser.ui.widget.jlist.JLTV2
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="✓ Or which screen you open"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"
+                />
+
+            <com.browser.ui.widget.jlist.JLTV2
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="✓ Also do not care about your private data"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"
+                />
+
+            <com.browser.ui.widget.jlist.JLTV2
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="✓ Doesn\'t show stupid ads in everywhere"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"
+                />
+
+            <!-- TITLE 2 -->
+            <com.browser.ui.widget.jlist.JLTV
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sup_title3"
+                android:textSize="18sp"
+                android:layout_marginTop="7dp"
+                />
+
+            <com.browser.ui.widget.jlist.JLTV2
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sup_title3_sub"
+                android:textSize="16sp"
+                android:layout_marginTop="5dp"
+                />
+
+            <com.browser.ui.widget.jlist.JLBG
+                android:id="@+id/BuyProButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                >
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic2"
+                    android:padding="2dp"
+                    />
+
+                <com.browser.ui.widget.jlist.JLTV2
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Buy PRO License Key"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="10dp"
+                    />
+
+            </com.browser.ui.widget.jlist.JLBG>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

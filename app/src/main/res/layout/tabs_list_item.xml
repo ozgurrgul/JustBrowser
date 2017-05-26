@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:gravity="center_vertical"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="2dp"
+    android:id="@+id/Wrapper"
+    >
+
+    <ImageView
+        android:id="@+id/IconImageView"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_trash"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <com.browser.ui.widget.JTV
+        android:id="@+id/TitleTextView"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:maxLines="2"
+        />
+
+    <FrameLayout
+        android:id="@+id/CloseImageViewWrapper"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/tabs_list_item_close_bg"
+        >
+
+        <ImageView
+            android:id="@+id/CloseImageView"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_close"
+            android:layout_gravity="center"
+            />
+
+    </FrameLayout>
+
+</LinearLayout>

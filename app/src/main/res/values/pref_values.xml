@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation">
+
+    <string-array name="search_engine_list_entries_values">
+        <item>https://duckduckgo.com/?q=</item>
+        <item>https://www.google.com/search?q=</item>
+        <item>https://search.yahoo.com/search?p=</item>
+        <item>https://www.bing.com/search?q=</item>
+        <item>https://yandex.ru/search/?text=</item>
+    </string-array>
+
+    <string-array name="settings_text_size_entries_values">
+        <item>50</item>
+        <item>75</item>
+        <item>100</item>
+        <item>125</item>
+        <item>150</item>
+    </string-array>
+
+    <string-array name="empty_array"/>
+
+</resources>

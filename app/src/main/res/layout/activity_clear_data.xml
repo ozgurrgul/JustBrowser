@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/RootLayout"
+    >
+
+    <com.browser.ui.widget.JTB
+        android:id="@+id/TopBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.browser.ui.widget.JBB
+        android:id="@+id/BottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        />
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_above="@id/BottomBar"
+       android:layout_below="@id/TopBar"
+       android:orientation="vertical"
+       >
+
+       <!--  browsing history -->
+       <com.browser.ui.widget.jlist.JLBG
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center_vertical"
+           android:padding="10dp"
+           >
+
+           <com.browser.ui.widget.jlist.JLTV
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:layout_height="wrap_content"
+               android:text="Clear history"
+               android:textSize="16sp"
+               android:layout_marginLeft="12dp"
+               />
+
+           <com.browser.ui.widget.jlist.JListSwitchButton
+               android:id="@+id/ClearBrowsingHistory"
+               android:layout_width="20dp"
+               android:layout_height="20dp"
+               android:layout_marginRight="8dp"
+               />
+
+       </com.browser.ui.widget.jlist.JLBG>
+
+       <!--  browsing cache -->
+       <com.browser.ui.widget.jlist.JLBG
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center_vertical"
+           android:padding="10dp"
+           >
+
+           <com.browser.ui.widget.jlist.JLTV
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:layout_height="wrap_content"
+               android:text="Clear cache"
+               android:textSize="16sp"
+               android:layout_marginLeft="12dp"
+               />
+
+           <com.browser.ui.widget.jlist.JListSwitchButton
+               android:id="@+id/ClearBrowsingCache"
+               android:layout_width="20dp"
+               android:layout_height="20dp"
+               android:layout_marginRight="8dp"
+               />
+
+       </com.browser.ui.widget.jlist.JLBG>
+
+       <!-- cookie -->
+       <com.browser.ui.widget.jlist.JLBG
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center_vertical"
+           android:padding="10dp"
+           >
+
+           <com.browser.ui.widget.jlist.JLTV
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:layout_height="wrap_content"
+               android:text="Clear cookie"
+               android:textSize="16sp"
+               android:layout_marginLeft="12dp"
+               />
+
+           <com.browser.ui.widget.jlist.JListSwitchButton
+               android:id="@+id/ClearCookie"
+               android:layout_width="20dp"
+               android:layout_height="20dp"
+               android:layout_marginRight="8dp"
+               />
+
+       </com.browser.ui.widget.jlist.JLBG>
+
+       <!-- action -->
+       <com.browser.ui.widget.jlist.JLBG
+           android:id="@+id/DeleteButton"
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:padding="10dp"
+           android:layout_marginTop="5dp"
+           android:layout_margin="5dp"
+           >
+
+           <ImageView
+               android:layout_width="35dp"
+               android:layout_height="35dp"
+               android:src="@drawable/ic_trash"
+               />
+
+           <com.browser.ui.widget.jlist.JLTV
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/s_clear_data"
+               android:textSize="16sp"
+               android:layout_marginLeft="5dp"
+               />
+
+       </com.browser.ui.widget.jlist.JLBG>
+
+   </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,182 @@
+<resources
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation"
+    >
+
+    <!-- APP -->
+    <string name="app_name">Just Browser</string>
+    <string name="yes">Evet</string>
+    <string name="no">Hayır</string>
+    <string name="menu">Menü</string>
+    <string name="file_name">Dosya ismi</string>
+
+    <string name="a_new_tab">Yeni sekmede aç</string>
+    <string name="a_cur_tab">Şu anki sekmede aç</string>
+    <string name="a_bg_tab">Arka planda aç</string>
+    <string name="a_download">Indir</string>
+    <string name="a_share">Paylaş</string>
+    <string name="a_incognito">Gizli sekme</string>
+    <string name="a_save_image">Resmi kaydet</string>
+    <string name="a_paste">Yapıştır</string>
+    <string name="a_paste_go">Yapıştır ve git</string>
+    <string name="a_cancel">İptal</string>
+    <string name="a_add">Ekle</string>
+    <string name="a_edit">Düzenle</string>
+    <string name="a_delete">Sil</string>
+    <string name="a_deleted">Silindi</string>
+    <string name="a_copy">Kopyala</string>
+    <string name="a_search">Ara</string>
+    <string name="a_okay">Tamam</string>
+    <string name="a_previous">Önceki</string>
+    <string name="a_next">Sonraki</string>
+    <string name="a_back">Geri</string>
+    <string name="a_open">Aç</string>
+    <string name="a_open_with">Şunla aç</string>
+    <string name="a_find_in_page">Sayfada bul</string>
+    <string name="a_bookmark">Yerimi ekle</string>
+    <string name="a_delete_with_file">Dosyayı da sil</string>
+    <string name="a_close">Kapat</string>
+    <string name="a_done">Bitti</string>
+    <string name="copy_link">Linki kopyala</string>
+    <string name="delete_all">Hepsini sil?</string>
+
+    <string name="location_permission">Konumu sitelerle paylaş</string>
+    <string name="hint_username">Kullanıcı adı</string>
+    <string name="hint_password">Şifre</string>
+    <string name="title">Başlık</string>
+    <string name="title_sign_in">Giriş</string>
+    <string name="title_warning">Dikkat</string>
+    <string name="title_file_chooser">Dosya seç</string>
+    <string name="title_form_resubmission">Formu yolla</string>
+    <string name="message_form_resubmission">Formu tekrar yolla?</string>
+    <string name="loading">Yükleniyor</string>
+    <string name="not_works_in_home">Anasayfada çalışmaz</string>
+
+    <string name="added_to_home">Anasayfaya eklendi</string>
+    <string name="added_to_launcher">Ana ekranınıza eklendi</string>
+    <string name="untitled">Untitled</string>
+    <string name="choose_location">Dosya konumu seç</string>
+    <string name="folder_name">Klasör adı</string>
+    <string name="bookmark_title">Yerimi başlığı</string>
+    <string name="no_data">Gösterilecek veri yok</string>
+    <string name="item_name">Item adı</string>
+    <string name="url">Url</string>
+    <string name="options">Seçenekler</string>
+    <string name="no_internet_connection">Internet yok</string>
+
+    <!-- BROKEN SSL MESSAGE -->
+    <string name="ssl_insecure_connection">Şu siteye olan bağlantı güvenli değil:\n%1$s\nYine de bağlan?</string>
+    <string name="ssl_cert_date_invalid">sertifika zamanı geçersiz</string>
+    <string name="ssl_cert_expired">sertifika süresi doldu</string>
+    <string name="ssl_cert_domain_mismatch">sertifika domaini site domaini ile eşleşmiyor</string>
+    <string name="ssl_cert_invalid">geçersizsertifika </string>
+    <string name="ssl_cert_not_yet_valid">sertifika henüz geçerli değil</string>
+    <string name="ssl_cert_untrusted">sertifika güvenilir değil</string>
+
+    <!-- SETTINGS -->
+    <string name="settings">Ayarlar</string>
+    <string name="other_settings">Diğer ayarlar</string>
+    <string name="s_search_engine">Arama motoru</string>
+    <string name="s_block_images">Sayfada resimleri engelle</string>
+    <string name="s_privacy">Gizlilik ayarları</string>
+    <string name="s_enable_cookies">Çerezlere izin ver</string>
+    <string name="s_save_history">Geçmişi kaydet</string>
+    <string name="s_restore_tabs_on_start">Açılışta sekmeleri kurtar</string>
+    <string name="s_support">Destek ol</string>
+    <string name="s_rate">Oy ver</string>
+    <string name="s_about">Hakkında</string>
+    <string name="s_text_size">Yazı boyutu</string>
+    <string name="s_block_js">Javascript devre dışı bırak</string>
+    <string name="s_block_ads">Reklamları engelle</string>
+    <string name="s_clear_data">Verileri temizle</string>
+    <string name="s_mouse_pad">MousePad göster</string>
+    <string name="s_desktop_mode">Masaüstü modu</string>
+    <string name="s_show_logo_in_home">Anasayfada logo göster</string>
+    <string name="s_start_copy_text_listener">Yardımcı arka plan servisini çalıştır. (Kopyala/yapıştır için)</string>
+
+    <string name="downloads_all">Indirilenler</string>
+    <string name="downloads_running">Devam edenler</string>
+    <string name="download_started">Indirme başladı</string>
+    <string name="download_finished">Indirme bitti</string>
+    <string name="download_error">Indirirken hata oluştu</string>
+    <string name="re_download">Tekrar indir</string>
+
+    <string name="no_app_found">Uygulama bulunamadı</string>
+    <string name="please_allow_permission">Lütfen uygulamaya izin verin</string>
+    <string name="permission_denied">İzin reddedildi</string>
+
+    <string name="click_to_open_tab">Sekmeyi açmak için tıklayın</string>
+
+    <!-- ODM -->
+    <string name="w_running">devam ediyor</string>
+    <string name="w_completed">bitti</string>
+    <string name="w_paused">durduruldu</string>
+    <string name="w_error">hata</string>
+    <string name="w_cancelled">iptal edildi</string>
+    <string name="w_waiting">bekliyor</string>
+
+    <string name="title_directory_choose">Klasör seçiniz</string>
+    <string name="choose">Seç</string>
+    <string name="action_up">Yukarı</string>
+    <string name="rate_us_if_you_like">Beğendiyseniz lütfen oy verin!</string>
+
+    <string name="url_is_empty">URL boş</string>
+    <string name="add_speed_dial">Anasayfaya ekle</string>
+    <string name="error_voice_recog">Bir hata oluştu</string>
+    <string name="speak_now">Şimdi Konuşun</string>
+    <string name="speak_wait">Lütfen bekleyin</string>
+    <string name="copied">Kopyalandı</string>
+    <string name="added">Eklendi</string>
+    <string name="total_blocked_ad_row">Şimdiye kadar {sites} içinde toplam {total} reklam engellendi.</string>
+    <string name="total_tab_count">Toplam {total} sekme açtım.</string>
+    <string name="total_url_count">Toplam {total} kez site açtım.</string>
+    <string name="adblocking">AdBlocking</string>
+    <string name="history">Geçmiş</string>
+    <string name="bookmarks">Yerimleri</string>
+
+    <string name="sup_title1">Just Browser ne yapar?</string>
+    <string name="sup_title1_sub">Just Browser mobil tarayıcıdır ve şunlara sahiptir:</string>
+    <string name="sup_title2">Just Browser ne yapmaz?</string>
+    <string name="sup_title2_sub">Just Browser diğerlerinin yaptıklarını yapmaz:</string>
+    <string name="sup_title3">Nasıl destek olabilirim?</string>
+    <string name="sup_title3_sub">Just Browser projesine destek olmanızın bir yolu var PRO Lisans anahtarı alarak bana destek olabilirsiniz. Bu sayede aynı anda 15 sekme limiti de kalkar.</string>
+    <string name="thanks_for_support">Destek olduğunuz için çok teşekkürler.</string>
+    <string name="tab_opened_in_bg">Sekme arka planda açıltı</string>
+    <string name="cleaned">Temizlendi</string>
+    <string name="exit">Çıkış</string>
+    <string name="my_stats">İstatistiklerim</string>
+    <string name="update_dialog_title">Güncelleme mevcut</string>
+    <string name="update_dialog_content">Just Browser i güncelleyebileceğiniz yeni sürüm mevcuttur.</string>
+    <string name="update">Güncelle</string>
+    <string name="be_pro_dialog_title">PRO Ol</string>
+    <string name="be_pro_dialog_content">15 sekme limiti. PRO Lisans alırsanız bu limit kalkacaktır.</string>
+    <string name="support">Destek!</string>
+    <string name="be_pro_dialog2_content">Uygulamayı sevdiniz gibi? Destek olmaya ne dersin?</string>
+    <string name="buy">Satın al</string>
+    <string name="details">Detaylar</string>
+    <string name="second_menu_remind_dialog_title">Alt kaydırma menü</string>
+    <string name="second_menu_remind_dialog_content">Alt menüyü sağa-sola kaydırarak tarayıcı işlevlerini görebilirsiniz.</string>
+    <string name="popup_blocked">Popup engellendi</string>
+    <string name="provide_url_and_title">Lütfen URL ve başlık giriniz</string>
+    <string name="themes">Temalar</string>
+    <string name="reload_tab">Yenile</string>
+    <string name="desktop_mode">Masaüstü modu</string>
+    <string name="phone_mode">Telefon modu</string>
+
+    <string-array name="search_engine_list_entries">
+        <item>DuckDuckGo</item>
+        <item>Google</item>
+        <item>Yahoo</item>
+        <item>Bing</item>
+        <item>Yandex</item>
+    </string-array>
+
+    <string-array name="settings_text_size_entries">
+        <item>Ufak</item>
+        <item>Küçük</item>
+        <item>Normal</item>
+        <item>Büyük</item>
+        <item>En büyük</item>
+    </string-array>
+
+</resources>

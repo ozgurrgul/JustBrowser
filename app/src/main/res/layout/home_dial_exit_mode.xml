@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.browser.ui.widget.jlist.JLBG
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_margin="5dp"
+    >
+
+    <com.browser.ui.widget.jlist.JLTV
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/a_done"
+        />
+
+</com.browser.ui.widget.jlist.JLBG>

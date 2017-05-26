@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.browser.odm.clipboard.UrlCopiedPopupViewContainer
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#77000000">
+
+    <LinearLayout
+        android:id="@+id/PopViewWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <com.browser.ui.widget.JTV
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:includeFontPadding="false"
+            android:text="@string/app_name"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:gravity="left"
+            >
+
+            <com.browser.ui.widget.JEditText
+                android:id="@+id/UrlEditText"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:maxLines="1"
+                />
+
+            <com.browser.ui.widget.JButton
+                android:id="@+id/SearchButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/a_search"
+                android:textSize="15sp"
+                />
+
+            <com.browser.ui.widget.JButton
+                android:id="@+id/DownloadButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/a_download"
+                android:textSize="15sp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.browser.odm.clipboard.UrlCopiedPopupViewContainer>

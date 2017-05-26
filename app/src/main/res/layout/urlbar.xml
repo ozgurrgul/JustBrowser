@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- dummy focus interceptor -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/bottom_height"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center_vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+        <com.browser.ui.bottom.BottomMenuItem
+            android:id="@+id/ButtonToolsMenu"
+            android:layout_width="@dimen/bottom_height"
+            android:layout_height="@dimen/bottom_height"
+            android:layout_alignParentLeft="true"
+            />
+
+        <com.browser.ui.bottom.BottomMenuItem
+            android:id="@+id/ButtonShowMenu"
+            android:layout_width="@dimen/bottom_height"
+            android:layout_height="@dimen/bottom_height"
+            android:layout_alignParentRight="true"
+            />
+
+        <com.browser.ui.bottom.BottomMenuItem
+            android:id="@+id/ButtonShowTabs"
+            android:layout_width="@dimen/bottom_height"
+            android:layout_height="@dimen/bottom_height"
+            android:layout_toLeftOf="@id/ButtonShowMenu"
+            />
+
+        <com.browser.ui.widget.JEditText
+            android:id="@+id/EditText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_height"
+            android:hint="@string/a_search"
+            android:textSize="15sp"
+            android:layout_toLeftOf="@id/ButtonShowTabs"
+            android:layout_toRightOf="@id/ButtonToolsMenu"
+            android:maxLines="1"
+            android:inputType="textNoSuggestions|textUri"
+            android:paddingRight="43dp"
+            android:paddingLeft="7dp"
+            android:gravity="center_vertical"
+            android:layout_margin="4dp"
+            />
+
+        <ProgressBar
+            android:id="@+id/ProgressBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_height"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_toLeftOf="@id/ButtonShowTabs"
+            android:layout_toRightOf="@id/ButtonToolsMenu"
+            android:alpha="0.2"
+            android:layout_margin="4dp"
+            android:progressDrawable="@drawable/progress_bg"
+            />
+
+        <FrameLayout
+            android:id="@+id/RemoveEditTextContent"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/RemoveEditTextContentImg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_remove"
+                />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/StopOrReload"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignRight="@id/EditText"
+            android:layout_centerVertical="true"
+            android:padding="3dp"
+            >
+
+            <ImageView
+                android:id="@+id/StopOrReloadImg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_close"
+                />
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/GoOrCancel"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textSize="13sp"
+        android:visibility="gone"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="2dp"
+        android:padding="5dp"
+        android:src="@drawable/ic_close"
+        />
+
+</LinearLayout>

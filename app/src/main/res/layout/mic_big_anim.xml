@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.browser.ui.widget.jlist.JLBG xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:clickable="false"
+    >
+
+    <ImageView
+        android:id="@+id/ImageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_mic"
+        android:scaleType="fitXY"
+        />
+
+    <com.browser.ui.widget.jlist.JLTV
+        android:id="@+id/TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/speak_wait"
+        android:textSize="16sp"
+        />
+
+</com.browser.ui.widget.jlist.JLBG>

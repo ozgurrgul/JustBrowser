@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.browser.dial.JDialItemBg
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_margin="5dp"
+    android:gravity="center_vertical"
+    >
+
+    <ImageView
+        android:id="@+id/ImageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_shield"
+        android:layout_marginLeft="5dp"
+        android:padding="5dp"
+        />
+
+    <com.browser.ui.widget.jlist.JLTV
+        android:id="@+id/TextView"
+        android:text="hahha"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        />
+
+</com.browser.dial.JDialItemBg>

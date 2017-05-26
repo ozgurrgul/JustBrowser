@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/bottom_height"
+    android:id="@+id/BottomMenuWrapper">
+
+    <com.browser.ui.bottom.BottomMenuItem
+        android:id="@+id/BottomMenuBack"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="@dimen/bottom_height" />
+
+    <com.browser.ui.bottom.BottomMenuItem
+        android:id="@+id/BottomMenuForward"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="@dimen/bottom_height" />
+
+    <com.browser.ui.bottom.BottomMenuItem
+        android:id="@+id/BottomMenuHome"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="@dimen/bottom_height" />
+
+    <com.browser.ui.bottom.BottomMenuItem
+        android:id="@+id/BottomMenuMic"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="@dimen/bottom_height" />
+
+    <com.browser.ui.bottom.BottomMenuItem
+        android:id="@+id/BottomMenuClose"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="@dimen/bottom_height" />
+
+</LinearLayout>

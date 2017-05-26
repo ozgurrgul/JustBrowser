@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/BottomPartWrapper">
+
+    <View
+        android:id="@+id/BottomDivider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+
+    <com.browser.ui.bottom.JViewPager
+        android:id="@+id/ViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_height" />
+
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/RootLayout">
+
+
+    <!-- BottomPart -->
+    <com.browser.ui.bottom.BottomPart
+        android:id="@+id/BottomPart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <!-- TabContainer -->
+    <FrameLayout
+        android:id="@+id/TabContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:windowSoftInputMode="adjustResize"
+        android:layout_above="@id/BottomPart" />
+
+    <!-- HomeView -->
+    <com.browser.ui.home.HomeView
+        android:id="@+id/HomeView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/BottomPart" />
+
+
+    <com.browser.ui.MousePad
+        android:id="@+id/MousePad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/BottomPart"
+        android:visibility="invisible"
+        />
+
+    <ImageView
+        android:id="@+id/MouseIcon"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_mouse"
+        android:visibility="invisible"
+        android:layout_marginTop="100dp"
+        />
+
+    <!-- TabsListView -->
+    <com.browser.tab.TabsListView
+        android:id="@+id/TabsListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/BottomPart"
+        android:visibility="gone"
+        />
+
+    <com.browser.suggestion.SuggestionList
+        android:id="@+id/SuggestionList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/BottomPart"
+        android:visibility="gone"
+        />
+
+    <com.browser.mic.MicrophoneBigAnim
+        android:id="@+id/MicrophoneBigAnim"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        />
+
+    <com.browser.ui.FindInPageView
+        android:id="@+id/FindInPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/Wrapper"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:padding="10dp"
+    >
+
+    <com.browser.ui.widget.jlist.JLTV
+        android:id="@+id/FindPrevious"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:text="@string/a_previous"
+        android:gravity="center"
+        />
+
+    <com.browser.ui.widget.jlist.JLTV
+        android:id="@+id/FindNext"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:text="@string/a_next"
+        android:gravity="center"
+        />
+
+    <com.browser.ui.widget.jlist.JLTV
+        android:id="@+id/FindCancel"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:text="@string/a_cancel"
+        android:gravity="center"
+        />
+
+</LinearLayout>
